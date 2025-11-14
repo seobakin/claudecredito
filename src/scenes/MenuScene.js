@@ -36,7 +36,7 @@ export default class MenuScene extends Phaser.Scene {
 
         // Start button
         const startButton = this.createButton(width / 2, height / 2 + 100, 'START GAME', () => {
-            this.scene.start('GameScene');
+            this.scene.start('AdvancedGameScene', { levelId: 1 });
         });
 
         // Instructions
@@ -61,7 +61,7 @@ export default class MenuScene extends Phaser.Scene {
 
         // Keyboard shortcut
         this.input.keyboard.once('keydown-SPACE', () => {
-            this.scene.start('GameScene');
+            this.scene.start('AdvancedGameScene', { levelId: 1 });
         });
     }
 

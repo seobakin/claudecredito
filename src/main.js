@@ -2,7 +2,9 @@ import Phaser from 'phaser';
 import BootScene from './scenes/BootScene.js';
 import MenuScene from './scenes/MenuScene.js';
 import GameScene from './scenes/GameScene.js';
+import AdvancedGameScene from './scenes/AdvancedGameScene.js';
 import GameOverScene from './scenes/GameOverScene.js';
+import VictoryScene from './scenes/VictoryScene.js';
 
 /**
  * Main game configuration
@@ -24,7 +26,7 @@ const config = {
             debug: false // Set to true for development
         }
     },
-    scene: [BootScene, MenuScene, GameScene, GameOverScene],
+    scene: [BootScene, MenuScene, AdvancedGameScene, GameScene, GameOverScene, VictoryScene],
     render: {
         pixelArt: false,
         antialias: true,
