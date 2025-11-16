@@ -32,3 +32,6 @@ npm-debug.log*
 # Cache
 .cache/
 .temp/
+
+# Download packages
+*.zip
